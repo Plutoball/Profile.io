@@ -1,0 +1,242 @@
+/*This home CSS file contains local styles for the home page of the website*/
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap');
+
+/*Styling of the hero section--moved to home.css*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding: 60px 5%;
+    background: #000;
+    color: #fff;
+    margin-top: 28px; /* Adjusted for fixed header */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.DP img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.DP-text h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+.DP-text h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.DP-text p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    line-height: 1.5;
+}   
+
+.intro-text h1 {
+    font-size: 100px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.intro-text p {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+}
+
+/*common button style*/
+.CTA-btn {
+    background: #007BFF;
+    color: #000;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 80px;
+    transition: background 0.3s ease;
+}
+
+.CTA-btn:hover {
+    background: #0056b3;
+    color: #fff;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    background: #00C853;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.6; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/*Styling for the seleted works section*/
+.work {
+    text-align: left;
+    padding: 60px 5%;
+    border-radius: 20px;
+    background: #111;
+    color: #fff;
+    
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.work-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 80px;
+    justify-content: center;
+}
+
+.work-item {
+    background: #111;
+    padding: 20px;
+    gap: 40px;
+    border: 1.5px solid #555;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 400px; /* Adjust height as needed */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}       
+
+.work-info {
+    position: absolute;
+    left: 100%; /* Hide off-screen */
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateX(100%); 
+    transition: transform 0.4s ease-in-out, 0.4s ease-in-out;
+    backdrop-filter: blur(1.5px); /* Adds blur effect */
+}
+
+.work-item:hover .work-info {
+    left: 0;
+    transform: translateX(0);
+    
+    opacity: 1; /* Show description on hover */
+}
+
+.open-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #bdbdbd;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.open-btn i {
+    font-size: 22px;
+}
+
+/* Hover effect */
+.work-item:hover .open-btn {
+    background: #007BFF;
+    color: #fff;
+    transform: scale(1.2);
+   
+}
+
+.work-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  max-width: 100%; /* Ensure the image resizes properly */
+  height: auto;
+  border-radius: 10px;
+}
+
+.work-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.adjustBtn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+/*Styling the about section*/
+.about {
+    padding: 80px 5%;
+    background: #000;
+    color: #fff;
+    text-align: left;
+}
+
+/* Large Quote */
+.about-quote h1 {
+    font-size: 60px;
+    font-weight: 400;
+    max-width: 800px;
+    text-align: left;
+}

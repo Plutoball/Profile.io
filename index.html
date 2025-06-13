@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/go_2.svg"> <!-- Favicon for the site -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Profile.io</title>
+</head>
+
+<body>
+
+    <!--Header section-->
+    <header class ="header">
+        <div class="container">
+            <a href="#hero" class="logo">Profile.io</a>
+            
+            <!--navigation-->
+
+            <nav class ="navbar">
+               <a href="index.html">Home</a>
+               <a href="about.html">About</a>
+               <a href="projects.html">Work</a>
+               <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--Hero section-->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+
+            <div class="DP">
+                <img src="images/DP-line art blue.svg" alt="Profile Picture">
+            </div>
+
+            <div class="DP-text">
+                <p>Thokozani Tshabalala</p>
+            </div>
+        </div>
+
+        <!--Introduction text-->
+        <div class="intro-text">
+            <h1>I Design Experiences That Captivate, Convert and Elevate.</h1>
+            <p>With experience in creating interactive user experiences for web, 
+               desktop, and mobile services. I specialize in crafting visually stunning, 
+               user-friendly, and high-converting digital experiences.
+            </p>
+        </div>
+        
+        <!--Call to action button & Availability status-->
+        <div class="hero-actions">
+
+            <div class="availability">
+                <span class="status">
+                    <span class="status-dot"></span>
+                    <p>Available</p>
+                </span>
+            </div>
+
+            <div class="divider"></div> <!-- Divider goes here -->
+
+            <a href="about.html" class="CTA-btn">Let's work</a>
+
+        </div>
+
+    </section>
+
+    <!--Selected works-->
+    <section class="work" id="work">
+        <h1 class="heading">Selected Works</h1>
+        <div class="work-container">
+            
+            <div class="work-item">
+                <img src="images/monetri cover image.svg" alt="Work 1">
+
+                <div class="work-overview">
+                    <h3>Monetri</h3>
+                    <p>Mobile - UX/UI design</p>
+                    <p>2025</p>
+                </div>
+
+                <div class="work-info">
+                    <h2>Improving the personal banking experience for young professionals.</h2>
+                    <p>
+                      Using emerging technologies to enable, asisst & enhance the financial 
+                      journey of new professionals throught the practial promotion of budgeting and saving.
+                    </p>
+                </div>
+                <button class="open-btn" onclick="openCaseStudy('Monetri.html')">
+                    <i class='bx bx-folder-open'></i>
+                </button>
+                </div>
+            </div>
+            <div class="work-item">
+                <img src="images/ppulse cover image.svg" alt="Work 2">
+
+                <div class="work-overview">
+                    <h3>Power Pulse</h3>
+                    <p>Web redesign - UX/UI design</p>
+                    <p>2024</p>
+                </div>
+
+                <div class="work-info">
+                    <h2>Keeping customers engaged and empowered with a new Pulse.</h2>
+                    <p>A redesigned web page to help busy professionals find and finance solar solutions tailored
+                        for their business needs - quick and easy.
+                    </p>
+                </div>
+
+                <button class="open-btn" onclick="openCaseStudy('Pulse.html')">
+                    <i class='bx bx-folder-open'></i>
+                </button>
+            </div>
+
+            <div class="work-item">
+                <img src="images/colab cover image.svg" alt="Work 3">
+
+                <div class="work-overview">
+                    <h3>Colab</h3>
+                    <p>Web - UX/UI design</p>
+                    <p>2021</p>
+                </div>
+
+                <div class="work-info">
+                    <h2>Creating a virtual collaborative experience.</h2>
+                    <p>Making space technologies more accessible through the development of an 
+                        open source microsatellite platform and community.
+                    </p>
+                </div>
+
+                <button class="open-btn" onclick="openCaseStudy('Colab.html')">
+                    <i class='bx bx-folder-open'></i>
+                </button>
+                </div>
+            </div>
+
+            <div class="adjustBtn">
+               <a href="projects.html" class="cta-btn">See More</a>
+            </div>
+            
+    </section>
+
+    <!--About section-->
+    <section class="about" id="about">
+    <!-- Intro Quote -->
+    <div class="about-quote">
+        <h1>"I believe design creates great solutions and ROI. 
+            By integrating relevant design principles and technologies, 
+            I help businesses create great products."
+        </h1>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline-container">
+        <div class="timeline-actions">
+          <span class="year">4+</span>
+          <p>Years of experience</p>
+          <div class="divider"></div> <!-- Divider sits here -->
+          <span class="year">10+</span>
+          <p>Projects completed</p>
+          <div class="divider"></div> <!-- Divider sits here -->
+          <span class="year">4+</span>
+          <p>Companies</p>
+          <div class="divider"></div> <!-- Divider sits here -->        
+          <a href="about.html" class="cta-btn"> More About Me</a>
+        </div>
+    </div>
+       
+
+    </section>
+
+
+    <!--Design process section-->
+
+    <!--Contact section-->
+    <section class="contact" id="contact">
+
+        <h1 class="heading">Talk to me. Let's work!</h1>
+
+        <div class="contact-container">
+           <!--Contact form-->
+            <form action="send_email.php" method="post">
+               <input type="text" placeholder="Your Name" required>
+               <input type="email" placeholder="Your Email" required>
+               <textarea placeholder="Your Message" required></textarea>
+               <button type="submit" class="btn">Send Message</button>
+            </form>
+            <!--Side message-->
+            <div class="contact-info">
+               <p class="contact-text">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+               <a href="mailto:likatshabalala@gmail.com">Thokozani Tshabalala</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--Scroll to top button-->
+    <button id="scrollToHero" class="fab">
+      <i class='bx bx-up-arrow-alt'></i> <!-- Icon from Boxicons -->
+    </button>
+
+    <!--Footer section-->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Thokozani Tshabalala. All rights reserved.</p>
+        <div>
+    </footer>
+
+    <!--JavaScript for smooth scrolling to hero section-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const scrollToHeroButton = document.getElementById("scrollToHero");
+            scrollToHeroButton.addEventListener("click", function() {
+                document.getElementById("hero").scrollIntoView({ behavior: "smooth" });
+            });
+        });
+
+        function openCaseStudy(url) {
+             window.location.href = url; // Redirects to the case study page
+        }
+        
+    </script>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+/*Project Heading Section*/
+.Backbtn{
+    color: #666;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    border: #666 solid 1.5px;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+}
+
+.Backbtn:hover {
+    background: #007BFF; /* Darker blue on hover */
+    color: #fff; /* Change text color to white on hover */
+    border: #007bff solid 1.5px; /* Match border color to hover background */
+}
+.case-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding: 60px 5%;
+    background: #000;
+    color: #fff;
+    margin-top: 28px; /* Adjusted for fixed header */;
+}
+
+.case-heading h1 {
+    font-size: 100px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.case-heading p {
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.case-study-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin-top: 60px;
+}
+
+.case-study-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Project overview Section*/
+.case-overview{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+    padding: 40px 5%;
+}
+
+.case-overview h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.case-overview p {
+    font-size: 18px;
+    color: #d8d8d8;
+    line-height: 1.6;
+}
+
+.case-overview .container {
+    background: #0f0f0f;
+    padding: 20px;
+    border-radius: 10px;
+    border: #666 solid 1.5px;
+}
+
+/*Solution showcase section*/
+.image-slider {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;  /* 16:9 Aspect Ratio (height/width = 9/16 * 100) */
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;    /* Adjust if needed – e.g., "height: auto;" if your container controls the height */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.slider-controls button {
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 60px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.slider-controls button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+/*Design process breakdown*/
+.about-quote {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 100px 5%;
+    margin-top: 40px;
+    background: #000;
+}
+.about-quote h1{
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    color: #fff;
+}
+.about-quote p {
+    font-size: 24px;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 60px;
+}
+
+/*Design steps*/
+/* Global design step spacing – matches process progress bar */
+.design-step-1,
+.design-step-2,
+.design-step-3 {
+  padding: 0 5%;
+  margin: 40px 0; /* Adjust vertical spacing as needed */
+  background: #000; /* Optional: a background color if desired */
+}
+
+/* Container for each design step */
+.step1-container,
+.step2-container,
+.step3-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px; /* or whatever maximum width fits your layout */
+  margin: 10px 10px;
+
+  
+}
+
+/* Subheadings, descriptions, and images */
+.subheading {
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 20px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.step1-image img,
+.step2-image img,
+.step3-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+/*Design step 1: Research*/
+/*Design step 2: Ideation & / Wireframing*/
+/*Design step 3: Design & / Prototyping*/
+/*View more work*/
+/* View More Work Section */
+.view-more-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding: 60px 5%;
+  color: #fff;
+  margin-top: 20px;
+  gap: 40px;
+
+}
+
+/* Subheading styling */
+.view-more-work .subheading {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Description text */
+.view-more-work p {
+  max-width: 800px;
+  margin: 0 0 40px;
+  color: #555;
+  line-height: 1.6;
+  font-size: 20px;
+  align-items: left;
+}
+
+/* Grid Layout for Project Items */
+.view-more-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 40px 5%;
+  border: #555 solid 1.5px; 
+  border-radius: 20px;
+  background: #111;
+}
+
+/* Styles for each project item */
+.view-project-item {
+  background: #222;
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Project image styling */
+.view-project-item img {
+  width: 100%; /* Full width */
+  height: 60%; /* Exactly half the height */
+  object-fit: cover; /* Maintains clean cropping */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+img{
+  max-width: 100%; /* Ensure the image resizes properly */
+  height: auto;
+}
+
+/* Project title */
+.view-project-item h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 0px;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 0 10px; /* Add some padding for better readability */
+}
+
+/* Project description/info */
+.project-info {
+  position: absolute;
+    right: -100%; /* Hide off-screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 85%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateX(100%);
+    backdrop-filter: blur(2px); /* Adds blur effect */ 
+    transition: transform 0.4s ease-in-out, 0.4s ease-in-out;
+}
+
+.view-project-item:hover .project-info {
+    right: 0;
+    transform: translateX(0);
+    opacity: 1; /* Show description on hover */
+}
+/* "Open Case Study" Button styling */
+.adjustBtn {
+    align-self: flex-end;
+    margin-top: 20px;
+}
+.open-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #bdbdbd;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.open-btn i {
+    font-size: 22px;
+    text-align: center;
+
+}
+.open-btn:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+/*Responsive Design*/
+@media screen and (max-width: 1024px) {
+    .veiw-project-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .view-project-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+    }
+}

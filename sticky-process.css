@@ -1,0 +1,58 @@
+/* Sticky Timeline Container */
+.process-container {
+  position: sticky;
+  top: 60px;
+  z-index: 50;
+  padding: 20px 5%;  /* 20px top&bottom, 5% left&right to match .case-heading */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background: #0f0f0f;
+  border-radius: 10px;
+}
+
+/* Layout for progess-bar items */
+.process-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 4px;
+  width: 100%;
+  color: #fff;
+}
+
+/* Default style for year, label, and CTA */
+.process-actions .year,
+.process-actions p {
+  margin: 0;
+  color: #333; /* Default, will override dynamically */
+}
+.process-actions .year {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Divider acting as progress bar */
+.process-divider {
+  width: 150px;
+  height: 4px;
+  background: #333;
+  margin: 0 5px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+/* Inner progress fill */
+.process-divider .progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%; /* Initial fill is zero */
+  background: #fff;
+  transition: width 0.3s ease-out;
+}
+
+
+
+

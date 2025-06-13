@@ -1,0 +1,130 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding: 60px 5%;
+    background: #000;
+    color: #fff;
+    margin-top: 20px; /* Adjusted for fixed header */
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 50px;
+    padding: 40px 5%;
+    border-radius: 20px;
+    background: #111;
+}
+
+.project-item {
+    background: #222;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-item img {
+    width: 100%; /* Full width */
+    height: 60%; /* Exactly half the height */
+    object-fit: cover; /* Maintains clean cropping */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+img {
+  max-width: 100%; /* Ensure the image resizes properly */
+  height: auto;
+}
+
+.project-item h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 0px;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 0 10px; /* Add some padding for better readability */
+}
+
+
+/*initially hide the description*/
+.project-info{
+    position: absolute;
+    right: -100%; /* Hide off-screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 85%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateX(100%); 
+    transition: transform 0.4s ease-in-out, 0.4s ease-in-out;
+    backdrop-filter: blur(2px); /* Adds blur effect */
+}
+
+.project-item:hover .project-info {
+    right: 0;
+    transform: translateX(0);
+    opacity: 1; /* Show description on hover */
+}
+
+.open-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #bdbdbd;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.open-btn i {
+    font-size: 22px;
+}
+
+/* Hover effect */
+.project-item:hover .open-btn {
+    background: #007BFF;
+    color: #fff;
+}
+
+/*Responsive Design*/
+@media screen and (max-width: 1024px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+    }
+}
+

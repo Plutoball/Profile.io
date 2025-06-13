@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/go_2.svg"> <!-- Favicon for the site -->
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Profile.io</title>
+</head>
+<body>
+
+    <!--Header section-->
+    <header class="header">
+        <div class="container">
+            <a href="#hero" class="logo">Profile.io</a>
+            
+            <!--navigation-->
+            <nav class="navbar">
+                <a href="index.html#hero">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Work</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+  <!-- Projects GRID section -->
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h1 class=" heading">My Projects</h1>
+
+            <p>
+              Here's a glimpse of some of my work. 
+              Each project is designed with strategy, creativity, and user experience in mind.
+            </p>
+
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="images/monetri cover image.svg" alt="Project 1">
+                    <h2>Monetri</h2>
+                    <div class="project-info">
+                      Financialy savvy young
+                      professionals.
+                    </div>
+                    <button class="open-btn" onclick="openCaseStudy('Monetri.html')">
+                      <i class='bx bx-folder-open'></i>
+                    </button>
+                </div>
+
+                <div class="project-item">
+                    <img src="images/colab cover image.svg" alt="Project 2">
+                    <h2>Colab</h2>
+                    <div class="project-info">A virtual collaborative experience.</div>
+                    <button class="open-btn" onclick="openCaseStudy('Colab.html')">
+                      <i class='bx bx-folder-open'></i>
+                    </button>
+                </div>
+
+                <div class="project-item">
+                    <img src="images/Insurance cover.svg" alt="Project 3">
+                    <h2>Insurance Hub</h2>
+                    <div class="project-info">Easy, on-the-go comprehensive insurance.</div>
+                    <button class="open-btn" onclick="openCaseStudy('Insure Hub.html')">
+                      <i class='bx bx-folder-open'></i>
+                    </button>
+                </div>
+
+                <div class="project-item">
+                    <img src="images/ppulse cover image.svg" alt="Project 4">
+                    <h2>Power Pulse</h2>
+                    <div class="project-info">Affordable & tailored solar solutions.</div>
+                    <button class="open-btn" onclick="openCaseStudy('Pulse.html')">
+                      <i class='bx bx-folder-open'></i>
+                    </button>
+                </div>
+
+                <div class="project-item">
+                    <img src="images/lima cover.svg" alt="Project 5">
+                    <h2>Lima</h2>
+                    <div class="project-info">Ensuring sustainable subsistance farming.</div>
+                    <button class="open-btn" onclick="openCaseStudy('Lima.html')">
+                      <i class='bx bx-folder-open'></i>
+                    </button>
+                </div>
+
+                <div class="project-item">
+                    <img src="images/Evolve cover image.svg" alt="Project 6">
+                    <h2>Business Evolve</h2>
+                    <div class="project-info">Improving a cross-channel business customer experience.</div>
+                    <button class="open-btn" onclick="openCaseStudy('Evolve.html')">
+                      <i class='bx bx-folder-open'></i>
+                    </button>
+                </div>
+
+                <div class="project-item">
+                    <img src="images/CB cover image.svg" alt="Project 7">
+                    <h2>Connected Banking</h2>
+                    <div class="project-info">
+                      Envisioning a simple digital banking interface for personal
+                      banking customers.
+                    </div>
+                    <button class="open-btn" onclick="openCaseStudy('CB.html')">
+                      <i class='bx bx-folder-open'></i>
+                    </button>
+                </div>
+
+                
+                <div class="project-item">
+                    <img src="images/LookSee cover.svg" alt="Project 8">
+                    <h2>LookSee</h2>
+                    <div class="project-info">Helping home owners build resource effecient homes.</div>
+                    <button class="open-btn" onclick="openCaseStudy('LookSee.html')">
+                      <i class='bx bx-folder-open'></i>
+                    </button>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!--Footer section-->
+      <!--Contact section-->
+    <section class="contact" id="contact">
+
+        <h1 class="heading">Talk to me. Let's work!</h1>
+
+        <div class="contact-container">
+           <!--Contact form-->
+            <form action="#" method="post">
+               <input type="text" placeholder="Your Name" required>
+               <input type="email" placeholder="Your Email" required>
+               <textarea placeholder="Your Message" required></textarea>
+               <button type="submit" class="btn">Send Message</button>
+            </form>
+            <!--Side message-->
+            <div class="contact-info">
+               <p class="contact-text">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+               <a href="mailto:likatshabalala@gmail.com">Thokozani Tshabalala</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--Scroll to top button-->
+    <button id="scrollToHero" class="fab">
+      <i class='bx bx-up-arrow-alt'></i> <!-- Icon from Boxicons -->
+    </button>
+
+    <!--Footer section-->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Thokozani Tshabalala. All rights reserved.</p>
+        <div>
+    </footer>
+
+    <!--JavaScript for smooth scrolling to hero section-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const scrollToHeroButton = document.getElementById("scrollToHero");
+            scrollToHeroButton.addEventListener("click", function() {
+                document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+            });
+        });
+
+        function openCaseStudy(url) {
+             window.location.href = url; // Redirects to the case study page
+        }
+
+    </script>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

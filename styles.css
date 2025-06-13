@@ -1,0 +1,202 @@
+/*This general CSS file contains global styles for the website*/
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap');
+/*General styles for the body*/
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #000000;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/*Syle for the header--moved to header.css*/
+
+/*Styling of the hero section--moved to home.css*/
+.hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+}
+
+/*common button style -- keep here*/
+.CTA-btn {
+    background: #007BFF;
+    color: #000;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 80px;
+    transition: background 0.3s ease;
+}
+
+.CTA-btn:hover {
+    background: #0056b3;
+    color: #fff;
+}
+
+/* Divider Line -- keep here*/
+.divider {
+    flex-grow: 1;
+    height: 1.4px;
+    background: rgba(255, 255, 255, 0.2); /* Faint line */
+    margin: 0 20px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    background: #00C853;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.6; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/*Styling for the seleted works section -- moved to home.css
+.work {
+    text-align: left;
+    padding: 60px 5%;
+    background: #111;
+    color: #fff;
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.work-container{
+    direction: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-content: center;
+}
+
+.work-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}       
+
+.work-container .work-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.work-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.work-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}*/
+
+/* Timeline Layout -- keep here*/
+.timeline-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.timeline-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 8px;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.year {
+    font-size: 24px;
+    font-weight: 600;
+    color: #007BFF;
+}
+
+.cta-btn {
+    background: #007BFF;
+    color: #000;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #0056b3;
+    color: #fff;
+}
+
+/*Styling for design process cards -- moved to home.css*/
+
+/*Contact form section--moved to footer.css
+
+/*Scloll to top button (FAB)--keep here*/
+.fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #000000; 
+    color: #007BFF;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.fab:hover {
+    background-color: #007BFF;
+    color: #fff; 
+    transform: scale(1.1); 
+}
+
+.fab i {
+    font-size: 24px;
+}
+
+.footer {
+    text-align: left;
+    padding: 10px;
+    background: #000;
+    color: #222;
+}

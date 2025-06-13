@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/go_2.svg"> <!-- Favicon for the site -->
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Profile.io</title>
+</head>
+<body>
+
+    <!--Header section-->
+    <header class="header">
+        <div class="container">
+            <a href="#hero" class="logo">Profile.io</a>
+            
+            <!--navigation-->
+            <nav class="navbar">
+                <a href="index.html#hero">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Work</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--Hero section-->
+    <section class="about-hero" id="about-hero">
+
+        <div class="about-hero-content">
+            <div class="about-text">
+                <p>
+                    Hi, Im Thokozani. A UX/UI designer 
+                    who has experience in creating interactive user experiences 
+                    for web, desktop, and mobile devices. My design approach is focused 
+                    on the user and ensuring that the products I create are not only useful
+                    but also make business sense. I enjoy creating
+                    intuitive and engaging user experiences that solve real-world problems.
+                </p>
+            </div>
+            <div class="about-DP">
+                <img src="images/DP-line art blue.svg" alt="Profile Picture">
+            </div>
+        </div>
+
+        <!--Call to action button & Availability status-->
+        <div class="hero-actions">
+            <div class="availability">
+                <span class="status">
+                    <!--span class="status-dot"></span-->
+                    <p>Based in South Africa</p>
+                </span>
+            </div> 
+            
+            <div class="divider"></div> <!-- Divider goes here -->
+
+            <a href="#contact" class="CTA-btn">Contact me</a>
+        </div>
+    </section>
+
+    <!--Experiance section-->
+    <section class="experience" id="experience">
+        <h1 class="heading">My Experience</h1>
+        <div class="experience-container">
+
+            <div class="experience-item">
+                <div class="exItem-heading">
+                    <h2>UX/UI Designer</h2>
+                    <div class="divider"></div>
+                    <p>IBM - 2023</p>
+                </div>
+                <p>Designed and prototyped a IBM Watson enabled digital solution to assist subsistence farmers mitigate climate issues</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="exItem-heading">
+                    <h2>UX/UI Designer</h2>
+                    <div class="divider"></div>
+                    <p>ABSA - 2022 to 2023</p>
+                </div>
+                <p>Designed user interfaces and experiences for various web & mobile applications, focusing on usability, interfaces and customer experience.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="exItem-heading">
+                    <h2>UX/UI Designer</h2>
+                    <div class="divider"></div>
+                    <p>KISPE Space - 2021 to 2023</p>
+                </div>
+                <p>Assisted in the design of a customer facing educational portal and website.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="exItem-heading">
+                    <h2>UI/UX designer</h2>
+                    <div class="divider"></div>
+                    <p>Tshimologong Digital Precinct - 2018 to 2020</p>
+                </div>
+                <p>Designed user interfaces and experiences for digital and non-digital products, focusing on usability, interaction and customer experience.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Tools section-->
+    <section class="tools" id="tools">
+        <h1 class="heading">Tools</h1>
+        <div class="tools-container">
+
+            <div class="tool-item">
+                <img src="images/Figma logo.svg" alt="Figma">
+                <p>Figma</p>
+                <div class="tool-description">Design, Collaboration & Prototyping.</div>
+            </div>
+
+            <div class="tool-item">
+                <img src="images/Miro logo.svg" alt="Miro">
+                <p>Miro</p>
+                <div class="tool-description">Whiteboarding, Research documentation & Collaboration.</div>
+            </div>
+
+            <div class="tool-item">
+                <img src="images/Ai logo.svg" alt="JavaScript">
+                <p> Adobe Ai</p>
+                <div class="tool-description">Wireframing, HiFi UI and Illustrations.</div>
+            </div>
+
+            <div class="tool-item">
+                <img src="images/Ps logo.svg" alt="ReactJS">
+                <p>Adobe Ps</p>
+                <div class="tool-description">Editing and treating images for UI.</div>
+            </div>
+
+            <div class="tool-item">
+                <img src="images/Office logo.svg" alt="Node.js">
+                <p>MS Office</p>
+                <div class="tool-description">Presentation slides & various documentation.</div>
+            </div>
+
+        </div>
+
+        <script>
+            document.querySelectorAll(".tool-item").forEach(item => {
+    item.addEventListener("click", () => {
+        // Remove active class from all tool-items
+        document.querySelectorAll(".tool-item").forEach(tool => tool.classList.remove("active"));
+
+        // Add active class to clicked tool
+        item.classList.add("active");
+    });
+});
+
+        </script>
+
+    </section>
+
+    <!--Contact section-->
+    <section class="contact" id="contact">
+
+        <h1 class="heading">Talk to me. Let's work!</h1>
+
+        <div class="contact-container">
+           <!--Contact form-->
+            <form action="#" method="post">
+               <input type="text" placeholder="Your Name" required>
+               <input type="email" placeholder="Your Email" required>
+               <textarea placeholder="Your Message" required></textarea>
+               <button type="submit" class="btn">Send Message</button>
+            </form>
+            <!--Side message-->
+            <div class="contact-info">
+               <p class="contact-text">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+               <a href="mailto:likatshabalala@gmail.com">Thokozani Tshabalala</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--Scroll to top button-->
+    
+
+    <button id="scrollToHero" class="fab">
+      <i class='bx bx-up-arrow-alt'></i> <!-- Icon from Boxicons -->
+    </button>
+
+    <!--Footer section-->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Thokozani Tshabalala. All rights reserved.</p>
+        <div>
+    </footer>
+
+    <!--JavaScript for smooth scrolling to hero section-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const scrollToHeroButton = document.getElementById("scrollToHero");
+            scrollToHeroButton.addEventListener("click", function() {
+                document.getElementById("about-hero").scrollIntoView({ behavior: "smooth" });
+            });
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
