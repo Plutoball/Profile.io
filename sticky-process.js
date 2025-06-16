@@ -59,3 +59,22 @@ designSteps.forEach((step, idx) => {
   // Begin observing this design step.
   observer.observe(step);
 });
+
+const processObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      header.classList.add('hidden');
+      processContainer.style.top = '0px';
+    } else {
+      header.classList.remove('hidden');
+      processContainer.style.top = '60px';
+    }
+  });
+}, {
+  root: null,
+  threshold: 1.0 // Only hide nav when breadcrumbs are fully in view
+});
+
+processObserver.observe(processContainer);
+
+rootMargin: '-40px 0px 0px 0px' // Adjust depending on header height

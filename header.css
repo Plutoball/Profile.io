@@ -36,6 +36,13 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.header.hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+
 /*Style for the header logo*/
 .logo {
     font-size: 24px;
