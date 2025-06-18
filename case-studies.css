@@ -385,3 +385,28 @@ img{
     }
 }
 
+@media screen and (max-width: 768px) {
+  .design-step-1,
+  .design-step-2,
+  .design-step-3 {
+    padding: 0 5%;
+    margin: 20px 0;
+  }
+
+  .step1-container,
+  .step2-container,
+  .step3-container {
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .view-more-work {
+    padding: 40px 5%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .view-more-work p {
+    font-size: 16px;
+  }
+}
