@@ -22,6 +22,11 @@
   .DP-text h1, .DP-text h2, .DP-text p {
     text-align: center;
   }
+
+  .about-quote h1 {
+    font-size: 40px;
+    text-align: center;
+  }
 }
 
 /* For tablets and below */
@@ -321,7 +326,7 @@ img {
 
 /* Large Quote */
 .about-quote h1 {
-    font-size: 60px;
+    font-size: clamp(2rem, 8vw, 6rem);
     font-weight: 400;
     max-width: 800px;
     text-align: left;
