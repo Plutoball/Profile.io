@@ -110,6 +110,7 @@
   .navbar {
     position: absolute;
     top: var(--header-height);
+    z-index: 99;
     right: 0;
     background: #fff;
     width: 100%;
@@ -119,6 +120,10 @@
     padding: 20px 5%;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
     display: none;
+  }
+
+  .header {
+    z-index: 100; /* Ensure it's always on top */
   }
 
   .navbar.active {
