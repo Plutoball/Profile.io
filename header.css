@@ -94,6 +94,18 @@
   padding: 10px;
 }
 
+.kebab-menu::before {
+  content: "⋮";
+  font-size: 28px;
+}
+
+/* Change to "×" when open */
+.kebab-menu.open::before {
+  content: "×";
+  font-size: 32px;
+}
+
+
 @media screen and (max-width: 768px) {
   .navbar {
     position: absolute;
@@ -103,7 +115,7 @@
     width: 100%;
     flex-direction: column;
     gap: 16px;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px 5%;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
     display: none;

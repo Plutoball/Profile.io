@@ -14,7 +14,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
   toggleBtn.addEventListener('click', () => {
     navMenu.classList.toggle('active');
+    toggleBtn.classList.toggle('open');
   });
 });
 // Close the mobile menu when a link is clicked
-const navLinks = document.querySelectorAll('#mobileMenu a');    
+const navLinks = document.querySelectorAll('#mobileMenu a');
+
+//Close the moble menu when the toggleBtn is clicked
+
