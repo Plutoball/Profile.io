@@ -99,7 +99,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
-    padding: 20px, 5%;
+    padding: 20px 5%;
 }
 
 .tool-item {
@@ -163,3 +163,85 @@
    left: 0;
    opacity: 1;
 }
+
+/*responsive styles */
+@media screen and (max-width: 1024px) {
+  .about-hero-content {
+    flex-direction: column;
+    padding: 60px 5%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-text h1 {
+    font-size: 36px;
+  }
+
+  .about-text p {
+    font-size: 18px;
+  }
+
+  .about-DP {
+    justify-content: center;
+  }
+
+  .about-DP img {
+    width: 240px;
+  }
+
+  .tools-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .tool-item {
+    width: 160px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-text h1 {
+    font-size: 28px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .tools-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-item {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .tool-description {
+    position: relative;
+    left: 0;
+    top: auto;
+    transform: none;
+    opacity: 1;
+    background: none;
+    padding: 10px 0 0;
+  }
+
+  .experience-item {
+    padding: 20px;
+  }
+
+  .exItem-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .exItem-heading h2,
+  .exItem-heading p {
+    font-size: 16px;
+  }
+}
+/* End of about.css */
