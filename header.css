@@ -105,19 +105,6 @@
   font-size: 32px;
 }
 
-.header.scrolled .navbar {
-  background: rgba(0, 0, 0, 0.85);
-}
-
-.header.scrolled .navbar a {
-  color: #fdfeff;
-}
-
-.header.scrolled .navbar a:hover {
-  color: #92c4fd;
-}
-
-
 @media screen and (max-width: 768px) {
   .navbar {
     position: absolute;
@@ -144,7 +131,7 @@
   }
 
   .header.scrolled .navbar {
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.95);
   }
 
   .header.scrolled .navbar a {
