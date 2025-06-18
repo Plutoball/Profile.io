@@ -24,6 +24,79 @@
   }
 }
 
+/* For tablets and below */
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .intro-text h1 {
+    font-size: 60px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .work-container {
+    gap: 40px;
+  }
+
+  .about-quote h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+/* For small phones */
+@media (max-width: 600px) {
+  .intro-text h1 {
+    font-size: 36px;
+  }
+
+  .DP img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .work-container {
+    grid-template-columns: 1fr;
+  }
+
+  .work-item {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .work-info {
+    position: relative;
+    opacity: 1;
+    transform: none;
+    left: 0;
+    backdrop-filter: none;
+  }
+
+  .open-btn {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .about-quote h1 {
+    font-size: 28px;
+  }
+}
+
+
+.hero,
+.work,
+.about {
+    padding: 60px 5vw;
+}
+
 .hero-content {
     display: flex;
     align-items: center;
@@ -56,9 +129,10 @@
 }   
 
 .intro-text h1 {
-    font-size: 100px;
+    font-size: clamp(2rem, 8vw, 6rem);
     font-weight: 400;
     margin-top: 20px;
+    text-align: start;
 }
 
 .intro-text p {
