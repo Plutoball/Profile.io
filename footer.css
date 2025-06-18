@@ -126,3 +126,54 @@ textarea {
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+  }
+
+  .contact-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-info h2 {
+    font-size: 20px;
+  }
+
+  .contact-info p,
+  .contact-text {
+    font-size: 16px;
+  }
+
+  .heading {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+
+  .contact-info h2 {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+    padding: 20px 5vw;
+  }
+}
