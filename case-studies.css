@@ -426,3 +426,51 @@ img{
     padding: 14px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .view-more-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px 5%;
+  }
+
+  .view-more-work {
+    padding: 30px 5%;
+    gap: 30px;
+  }
+
+  .view-more-work .subheading {
+    font-size: 1.5rem;
+  }
+
+  .view-more-work p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .design-step-1,
+  .design-step-2,
+  .design-step-3 {
+    padding: 0 5%;
+    margin: 15px 0;
+  }
+
+  .step1-container,
+  .step2-container,
+  .step3-container {
+    padding: 0;
+    gap: 20px;
+  }
+
+  .hero-actions {
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .CTA-btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+
