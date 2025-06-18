@@ -161,6 +161,36 @@ body {
     color: #fff;
 }
 
+@media (max-width: 768px) {
+  .timeline-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .timeline-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .year {
+    font-size: 20px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /*Styling for design process cards -- moved to home.css*/
 
 /*Contact form section--moved to footer.css
