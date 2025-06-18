@@ -273,4 +273,20 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .hero-actions {
+    gap: 16px;
+  }
+
+  .CTA-btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .availability .status p {
+    font-size: 15px;
+  }
+}
+
+
 /* End of about.css */
