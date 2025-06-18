@@ -122,28 +122,42 @@
   .navbar {
     position: absolute;
     top: var(--header-height);
-    z-index: 99;
     right: 0;
-    background: #fff;
     width: 100%;
     flex-direction: column;
     gap: 16px;
     align-items: center;
-    padding: 20px 5%;
+    padding: calc(var(--header-height) + 10px) 5% 20px;
+    background: #fff;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    z-index: 99;
     display: none;
-  }
-
-  .header {
-    z-index: 100; /* Ensure it's always on top */
+    transition: background 0.3s ease;
   }
 
   .navbar.active {
     display: flex;
   }
 
+  .header {
+    z-index: 100;
+  }
+
+  .header.scrolled .navbar {
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  .header.scrolled .navbar a {
+    color: #fdfeff;
+  }
+
+  .header.scrolled .navbar a:hover {
+    color: #92c4fd;
+  }
+
   .kebab-menu {
     display: block;
+    z-index: 101; /* Keeps toggle icon above menu */
   }
 
   .header .container {
