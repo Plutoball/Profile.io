@@ -16,7 +16,7 @@
 @media (max-width: 768px) {
   .intro-text h1 {
     font-size: 48px;
-    text-align: center;
+    text-align: left;
   }
 
   .DP-text h1, .DP-text h2, .DP-text p {
