@@ -230,3 +230,17 @@ body {
     background: #000;
     color: #222;
 }
+
+
+/* responsive styles for some elements in the casestudies */
+@media screen and (max-width: 1024px) {
+    .view-more-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .view-more-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+    }
+}
