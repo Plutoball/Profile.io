@@ -35,10 +35,9 @@ form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 50%;
+    width: 50% !important;
     max-width: 600px;
     border-radius: 10px;
-    ;
 }   
 
 input, textarea {
