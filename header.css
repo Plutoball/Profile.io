@@ -85,3 +85,40 @@
     color: #333; 
     transition: color 0.3s ease-in-out;
 }
+
+.kebab-menu {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: var(--header-height);
+    right: 0;
+    background: #fff;
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 20px 5%;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .kebab-menu {
+    display: block;
+  }
+
+  .header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
