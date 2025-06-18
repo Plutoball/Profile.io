@@ -13,6 +13,17 @@
     margin-top: 28px; /* Adjusted for fixed header */
 }
 
+@media (max-width: 768px) {
+  .intro-text h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .DP-text h1, .DP-text h2, .DP-text p {
+    text-align: center;
+  }
+}
+
 .hero-content {
     display: flex;
     align-items: center;
